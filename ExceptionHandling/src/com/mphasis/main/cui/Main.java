@@ -9,12 +9,24 @@ class IllegalAgeException extends Exception{
         return "You have to be adult first to register for voting";
     }
 }
+
 class Voter{
     public void register(int age) throws IllegalAgeException{
         if(age <18){
             throw new IllegalAgeException();
         }
     }
+}
+class Test{
+    public void testing() throws IllegalAgeException {
+        new Voter().register(15);
+    }
+}
+class Base{
+
+}
+class Derived{
+
 }
 
 public class Main {
@@ -27,14 +39,16 @@ public class Main {
         logger.log(Level.INFO,"Begin");
         int first=0;
         int second=0;
-        Voter voter =new Voter();
-        try {
-            voter.register(17);
+        Airthmatic airthmetic=new Airthmatic();
+        int result=airthmetic.sum(2,4);
+        assert 7==result: "Galat h";
+
+        /*try {
+            new Test().testing();
         } catch (IllegalAgeException e) {
             e.printStackTrace();
         }
-
-        /*try {
+        try {
              first=Integer.parseInt(args[0]);
              second=Integer.parseInt(args[1]);
             System.out.println("Hello");
