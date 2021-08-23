@@ -82,6 +82,7 @@ public class Exchange {
                 System.out.println("Order book contains orders at that level, adding our new order..");
                 orderbook.get(orderToAdd.price).add(orderToAdd);
 
+
                 //Send a fill message to the correct client
                 clientFeeds.get(orderToAdd.clientID).feedMessageQueue.add("Order added with ID: " + orderToAdd.orderID.toString());
             }
@@ -103,6 +104,10 @@ public class Exchange {
 
         if (orderToFill.type == OrderType.BUY)
         {
+            orderbook.entrySet().stream()
+                    .flatMap(priceLevel->priceLevel.getValue().stream())
+                    .filter(value-> (orderToFill.price<=value.price && value.type==OrderType.SELL))
+                    .filter(value->todelete(value));
 
             try
             {
@@ -196,6 +201,10 @@ public class Exchange {
         // iterate through the orderbook until you find the ORDER ID
         // when you do find it, remove it
         //then send message to the client.
+        //orderbook.entrySet().stream()
+          //      .flatMap()
+            //    ;
+
         for ( ConcurrentMap.Entry<Double, PriorityQueue<Order> > priceLevel : orderbook.entrySet())
         {
 
@@ -231,6 +240,9 @@ public class Exchange {
 
 
         // loop to build the book string
+        //orderbook.entrySet().stream()
+                //.forEach()
+              //      ;
         for ( ConcurrentMap.Entry<Double, PriorityQueue<Order> > priceLevel : orderbook.entrySet()){
 
             Order order = priceLevel.getValue().peek();

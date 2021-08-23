@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc93a5ae-9438-483f-9216-edff3256cbce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Collections1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Collections1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Collections1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Collections1/Collections1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Streams.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Streams1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Streams1/Streams1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Streams1/src/com/mphasis/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GC/src/com/mphasis/main/cui/GCTestAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GC/src/com/mphasis/main/cui/GCTestAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GC/src/com/mphasis/main/cui/GCTestAgentMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GC/src/com/mphasis/main/cui/GCTestAgentMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/JDBC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/JDBC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Networking/src/com/mphasis/main/cui/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Networking/src/com/mphasis/main/cui/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIServerApp/src/com/mphasis/main/cui/AuthenticationRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServerApp/src/com/mphasis/main/cui/AuthenticationRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIServerApp/src/com/mphasis/main/cui/AuthenticationRemoteImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServerApp/src/com/mphasis/main/cui/AuthenticationRemoteImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serializable/src/com/mphasis/main/cui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Serializable/src/com/mphasis/main/cui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/out/production/StockExchange/com/mphasis/main/cui/Exchange.class" beforeDir="false" afterPath="$PROJECT_DIR$/../StockExchange/out/production/StockExchange/com/mphasis/main/cui/Exchange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/src/com/mphasis/main/cui/Exchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StockExchange/src/com/mphasis/main/cui/Exchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
