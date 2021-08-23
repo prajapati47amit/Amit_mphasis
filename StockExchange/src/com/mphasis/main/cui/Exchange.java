@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.PriorityQueue;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.*;
 
 public class Exchange {
 
@@ -26,6 +24,7 @@ public class Exchange {
         // Then init one Exchange object.  this will create all the message queues and order structs
         //  call runServer
         int port = Integer.parseInt(args[0]);
+        //int port = 5176;
         Exchange OurExchange = new Exchange();
 
         OurExchange.runServer(port);
@@ -54,11 +53,12 @@ public class Exchange {
             catch (IOException e) {
                 System.out.println("Error connecting to client");
             }
+            ExecutorService executorService1= Executors.newCachedThreadPool();
+            executorService1.execute(new Connection(clientSock,this));
 
 
-
-            new Thread(
-                    new Connection(clientSock, this) ).start();
+           // new Thread(
+             //       new Connection(clientSock, this) ).start();
 
 
 

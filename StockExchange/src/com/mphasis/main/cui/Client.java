@@ -2,6 +2,9 @@ package com.mphasis.main.cui;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Client {
 
@@ -37,6 +40,9 @@ public class Client {
         String clientID = args[0];
         String connectionType = args[1];
         int port = Integer.parseInt(args[2]);
+        //String clientID = "Mphasis";
+        //String connectionType = "EXEC";
+        //int port = 5176;
 
         switch(connectionType){
 
@@ -44,14 +50,17 @@ public class Client {
                 System.out.println("Starting feed method call...");
                 startFeed(clientID, port);
                 //	new Thread(	new ClientGatewayReader()).start();
+                ExecutorService executorService= Executors.newCachedThreadPool();
 
                 break;
 
             case "EXEC":
                 //create exec connection
                 startExec(clientID, port);
-
+                Socket clientSoc = new Socket("localhost", port);
                 //new Thread(	new ClientGatewayExec()).start();
+               // ExecutorService executorService1= Executors.newCachedThreadPool();
+                //executorService1.execute(new Connection(clientSoc),10, TimeUnit.SECONDS);
 
 
                 break;
